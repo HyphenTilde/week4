@@ -8,22 +8,15 @@
     <h2>Login Page</h2><br>    
     <div class="login">    
     <form id="login" method="get" action="login.php">    
-        <label><b>User Name     
-        </b>    
-        </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username" [(ngModel)]="username">
+        <label><b>User Name</b></label>    
+        <input type="text" id="Uname" placeholder="Username" [(ngModel)]="usertest.username" name="usertest.username">
         <br><br>    
-        <label><b>Password     
-        </b>    
-        </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Password" [(ngModel)]="password">    
+        <label><b>Password</b></label>    
+        <input type="Password" id="Pass" placeholder="Password" [(ngModel)]="usertest.password" name="usertest.password">    
         <br><br>    
         <input type="button" name="log" id="log" value="Log In Here" (click)="clickme()">
         <br><br>    
-        <input type="checkbox" id="check">    
-        <span>Remember me</span>    
-        <br><br>    
-        Forgot <a href="#">Password</a>    
+        <input type="button" name="log" id="log" value="Profile Page" (click)="profile()">
     </form>     
 </div>    
 </body>    
